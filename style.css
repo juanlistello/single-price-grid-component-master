@@ -1,0 +1,145 @@
+
+/* reset */
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+/* base style */
+body {
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-size: 11px;
+    text-align: left;
+    background: hsl(204, 43%, 93%);
+    line-height: 1.5;
+}
+
+.container {
+    
+    padding: 4rem 2rem;
+    
+}
+.main {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px; 
+    box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.2);
+    overflow:hidden;
+}
+/* top */
+.top {
+    background: white;
+    padding: 1.5rem 1.5rem;
+}
+/* bottom1 */
+.top h1 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 1rem;
+}
+
+.top h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 1rem;
+    margin-bottom: 0.9rem;
+}
+.top p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: hsl(218, 22%, 67%);
+}
+
+.bottom1 {
+    height: 250px;
+    color: white;
+    background: hsl(179, 62%, 43%);
+    padding: 1.5rem 1.5rem;
+
+}
+.bottom1 h1 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 0.9rem;
+}
+
+.bottom1 h2 {
+    font-weight: bold;
+    font-size: 1.9rem;
+}
+.bottom1  span {
+    color: hsl(180, 41%, 66%);
+    font-weight: 200;
+    font-size: 1rem;
+    margin-left: 0.4rem;
+}
+.bottom1 p {
+    font-size: 0.9rem;
+}
+
+.bottom1 .signup {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: white;
+    background:hsl(71, 73%, 54%) ;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem 2rem;
+    border: none;
+    margin-top: 1.5rem;
+    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+/* bottom 2 */
+.bottom2 {
+    height: 250px;
+    color: white;
+    background: hsl(179, 64%, 47%);
+    padding: 1.5rem 1.5rem;
+}
+
+.bottom2 h1 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 0.9rem;
+}
+.bottom2 p {
+    color:white;
+    font-size: 0.8rem;
+}
+
+@media (min-width: 768px){
+    .container {
+        height: 100vh;
+        padding: 11rem 5rem;
+    }
+  
+    .main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        max-width: 800px;
+    }
+    .main .top {
+        flex-direction: column;
+        flex-grow: 2;
+    }
+    .main .bottom1 {
+        flex-grow: 1;
+        width: 50%;
+    }
+    .main .bottom2 {
+        flex-grow: 1;
+        width: 50%;
+    }
+}
